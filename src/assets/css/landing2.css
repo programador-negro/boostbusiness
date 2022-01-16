@@ -1,53 +1,274 @@
 .background {
-    background-color: #000000;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
+  background-color: #000000;
+  /* width: 100vw; */
+  height: 100vh;
+  overflow: auto;
 }
 .parallax {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-  }
+  background-color: black;
+  margin: 0% 5%;
+  padding: 0;
+}
 
 .portada-img {
-    border: 1px solid yellowgreen;
-    width: 60%;
-    float: right;
-    
-    /* height: 25%; */
+  /* border: 1px solid yellowgreen; */
+  width: 50%;
+  float: right;
+  margin-right: 3%;
+  border-radius: 4rem 4rem;
+  -webkit-box-shadow: 0px 0px 26px -3px #ffffff;
+  box-shadow: 0px 0px 26px -3px #ffffff;
+
+  /* height: 25%; */
 }
 .topnav {
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-    margin: 20px;
-    border: 1px solid #ddd;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 7%;
+  /* border: 1px solid #ddd; */
+}
+.topnav-bottom {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2% 2.5%;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Impact;
+  letter-spacing: 0.3em;
+  /* border: 1px solid #ddd; */
+  border-radius: 0.5rem 0.5rem;
+  /* margin-left: 100px; */
+  /* margin-right: 100px; */
+  float: right;
+}
+.topnav a img {
+  width: 7rem;
+  float: left;
+}
+.noHover {
+  pointer-events: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 0rem 0rem 2rem 2rem;
+}
+
+.topnav a.active {
+  background-color: #438999;
+  color: white;
+  border-radius: 0rem 0rem 2rem 2rem;
+}
+.topnav a.active:hover {
+  background-color: #143d47;
+  color: white;
+  border-radius: 0rem 0rem 2rem 2rem;
+}
+
+.topnav a.brand-title {
+  font-size: 4rem;
+  float: left;
+  padding: 1% 2%;
+  padding-left: 0;
+  font-family: Impact, "fantasy";
+  letter-spacing: 0em;
+}
+
+/* .logotipo-boostbusiness img {
+  width: 20%;
+  float: left;
+  margin-left: 3%;
+  border-radius: 4rem 4rem;
+} */
+
+.title-phrase {
+  font-family: sans-serif;
+  font-size: 40%;
+  float: center;
+}
+.text-presentation {
+  float: left;
+  width: 40%;
+}
+
+.text-presentation p.first-p {
+  font-family: sans-serif;
+  color: white;
+  font-size: 2.9em;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 4%;
+}
+.text-presentation p.second-p {
+  font-family: Trebuchet MS, sans-serif;
+  top: 0;
+  font-size: 1.2em;
+  text-align: justify;
+  margin-top: 0;
+  color: #adadad;
+}
+.btn-asesoria {
+  background: rgb(252, 5, 5);
+  font-size: 1.2em;
+  background: linear-gradient(
+    90deg,
+    rgba(252, 5, 5, 1) 5%,
+    rgba(255, 0, 134, 1) 76%
+  );
+  color: white;
+  border-radius: 4rem;
+  padding: 2% 5%;
+  border: 0;
+  float: center;
+  animation: shine 3s;
+  animation-iteration-count: infinite;
+  margin: 5% 25%;
+}
+.btn-asesoria:hover {
+  /* font-weight: bold; */
+  padding: 3% 6% 3% 6%;
+}
+@keyframes shine {
+  /* from {padding: 2% 5%;}
+  to {padding: 3% 6%;} */
+  25% {
+    background: rgb(229, 241, 55);
+    left: 200px;
+    top: 0px;
+    color: #000000;
   }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border: 1px solid #ddd;
-    border-radius: 0.5rem 0.5rem;
-    margin-left: 100px;
-    margin-right: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #000000;
+    margin: 0% 3%;
+    padding: 0;
+    overflow-x: hidden;
   }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  html {
+    overflow-x: hidden;
   }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
+  .background {
+    background-color: #000000;
+    height: 100vh;
+    /* overflow: auto; */
+  }
+  .portada-img {
+    width: 90%;
+    margin-top: 5%;
+    border-radius: 1rem 1rem;
+    /* position: relative; */
+    margin-bottom: 5%;
+    float: none;
+    margin: 0% 7%;
+    -webkit-box-shadow: 0px 0px 26px -3px #ffffff00;
+    box-shadow: 0px 0px 26px -3px #ffffff00;
+  }
+
+  .text-presentation {
+    width: 100%;
+  }
+
+  .text-presentation p.first-p {
+    font-family: sans-serif;
     color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 1%;
+  }
+  .text-presentation p.second-p {
+    font-family: Trebuchet MS, sans-serif;
+    top: 0;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 7%;
+    color: #adadad;
+    display: none;
+  }
+  .topnav a img {
+    width: 4rem;
+    float: left;
+  }
+  .topnav a.brand-title {
+    margin-top: 5%;
+    font-size: 2.5rem;
+    float: center;
+    color: white;
+    width: 100%;
+    padding: 1% 0%;
+    padding-left: 0;
+    font-family: Impact, "fantasy";
+    letter-spacing: 0em;
+  }
+  .title-phrase {
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    float: center;
+  }
+  .topnav a {
+    float: center;
+    color: #b6b6b6;
+    text-align: center;
+    padding: 2% 5%;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: Impact;
+    letter-spacing: 0.2em;
+  }
+  .topnav a.active {
+    background-color: #00d0ff;
+    color: rgb(5, 5, 5);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    display: none;
+  }
+  .social-media {
+    /* border-radius: 0rem 0rem 1rem 1rem; */
+    padding-bottom: 2%;
+    height: min-content;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .social-media .logo-smedia {
+    width: 2rem;
+    margin: 0% 50%;
+    display: inline-block;
+    margin: 0% 7%;
+  }
+  .topnav a.notitle{
+    display: none;
+  }
+  .topnav-bottom{
+    display: block;
+    margin-top: 5%;
   }
  
+  .topnav-bottom a {
+    float: center;
+    color: #b6b6b6;
+    text-align: center;
+    padding: 2% 5%;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: Impact;
+    letter-spacing: 0.2em;
+  }
+  .topnav-bottom a.active {
+    background-color: #00d0ff;
+    color: rgb(5, 5, 5);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    display: none;
+  }
+}
