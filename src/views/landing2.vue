@@ -1,16 +1,16 @@
 <template>
   <div class="background">
+    <!-- MENU DE NAVEGACIÓN TOP -->
     <div class="topnav">
       <a class="active" href="#home">Inicio</a>
       <a class="notitle" href="#news">Mas</a>
       <a class="notitle" href="#contact">Contacto</a>
       <a class="notitle" href="#about">¿Quienes somos?</a>
       <a class="brand-title noHover" href="#about">
-        <img src="../assets/logotipo_invertido.png" alt="" />
-        BOOST BUSINESS <br />
-        <div class="title-phrase">Crece y Destaca</div>
+        <img src="../assets/logotipo-y-frase-horizontal.png" alt="" />
       </a>
     </div>
+    <!-- PÁRRAFO DE ACCIÓN DE USUARIOS -->
     <div class="text-presentation">
       <p class="first-p">Queremos escuchar tu idea de negocio</p>
 
@@ -18,29 +18,29 @@
         Nosotros la impulsaremos con nuestra experiencia en el uso de técnicas y
         herramientas de marketing
       </p>
-
-      <button class="btn-asesoria">Asesoría gratis</button>
+      <!-- BOTÓN DE ASESORIA -->
+      <a href="https://wa.link/jw3iya">
+        <button class="btn-asesoria">Asesoría gratis</button>
+      </a>
     </div>
+    <!-- IMAGEN DE SOCIOS -->
     <img class="portada-img" src="../assets/portada.jpg" alt="" />
-
+    <!-- PIE DE PAGINA -->
     <footer class="social-media">
-      <a href="" class="text-instagram">
-       
-       <img class="logo-smedia" src="../assets/logo-facebook.png" alt="" />
-       <img class="logo-smedia" src="../assets/logo-instagram.png" alt="" />
-       <img class="logo-smedia" src="../assets/logo-whatsapp.png" alt="" />
+      <a href="">
+        <img class="logo-smedia" src="../assets/logo-facebook.png" alt="" />
+      </a>
+      <a target="_blank" href="https://www.instagram.com/boost_business_/?hl=es-la">
+        <img class="logo-smedia" src="../assets/logo-instagram.png" alt="" />
+      </a>
+      <a target="_blank" href="https://wa.link/jw3iya">
+        <img class="logo-smedia" src="../assets/logo-whatsapp.png" alt="" />
       </a>
     </footer>
     <div class="topnav-bottom">
-      <a class="active" href="#home">Inicio</a>
-      <a href="#contact">Contacto</a>
+      <a href="">Contacto</a>
       <a href="#about">¿Quienes somos?</a>
       <a href="#news">Mas</a>
-      <a class="brand-title noHover" href="#about">
-        <img src="../assets/logotipo_invertido.png" alt="" />
-        BOOST BUSINESS <br />
-        <div class="title-phrase">Crece y Destaca</div>
-      </a>
     </div>
   </div>
 </template>

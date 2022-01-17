@@ -3,12 +3,12 @@ import Home from '../views/Home.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/2',
     name: 'landing',
     component: () => import('../views/landing.vue')
   },
   {
-    path: '/2',
+    path: '/',
     name: 'landing2',
     component: () => import('../views/landing2.vue')
   },
